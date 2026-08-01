@@ -285,7 +285,10 @@
           </div>
         </div>
         <div class="space40px"></div>
-        <div class="main-content" data-aos="fade-up" data-aos-easing="linear" style="display: flex; justify-content: center; width: 100%;">
+        <!-- Buttons Container (Centered & Styled) -->
+        <div data-aos="fade-up" data-aos-easing="linear" style="display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; width: 100%; margin-top: 30px;">
+        
+          <!-- 1. Add To Calendar Button -->
           <add-to-calendar-button
             name="Majlis Bertandang Irfan Rifqi &amp; A'isyah Bahirah"
             options="'Apple','Google','iCal','Outlook.com','Yahoo','MicrosoftTeams','Microsoft365'"
@@ -301,21 +304,33 @@
             label="Tambah Ke Kalendar"
             lightMode="system"
           ></add-to-calendar-button>
-        </div>
-
-        <!-- RSVP Button -->
-          <a href="#RSVP" class="button is-dark is-rounded">
-            <span class="icon">
-              <i class="fas fa-envelope"></i>
-            </span>
+        
+          <!-- 2. Matching RSVP Button -->
+          <a href="#RSVP" style="
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #2d2d2d;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            height: 42px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.2s ease;
+          "
+          onmouseover="this.style.backgroundColor='#1a1a1a'"
+          onmouseout="this.style.backgroundColor='#2d2d2d'"
+          >
+            <i class="far fa-paper-plane"></i>
             <span>Pengesahan Kehadiran (RSVP)</span>
           </a>
-        <!--div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/event?action=TEMPLATE..." target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Google Calendar
-          </a>
-        </div!-->
+
+</div>
       </section>
       <!-- End Waktu Content -->
 
